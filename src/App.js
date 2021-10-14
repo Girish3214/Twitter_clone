@@ -1,26 +1,27 @@
-import  CssBaseline from '@mui/material/CssBaseline';
-import Container  from '@mui/material/Container';
-import { createTheme, ThemeProvider, useMediaQuery } from '@mui/material';
-import { useMemo } from 'react';
+import CssBaseline from "@mui/material/CssBaseline";
+import Container from "@mui/material/Container";
+import { createTheme, ThemeProvider, useMediaQuery } from "@mui/material";
+import { useMemo } from "react";
 
+import RouterComp from "./components/RouterComp";
 
 function App() {
-   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 
   const theme = useMemo(
     () =>
       createTheme({
         palette: {
-          mode: prefersDarkMode ? 'dark' : 'light',
+          mode: prefersDarkMode ? "dark" : "light",
         },
       }),
-    [prefersDarkMode],
+    [prefersDarkMode]
   );
   return (
-    <ThemeProvider theme={theme} >
+    <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container maxWidth="lg" disableGutters={true}>
-        Girish
+        <RouterComp />
       </Container>
     </ThemeProvider>
   );

@@ -1,0 +1,35 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import useStyles from "../styles/MenuBarStyles";
+import { menuItems } from "../utils/MenuBarItems";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import { Button } from "@mui/material";
+import MenuItem from "./MenuItem";
+
+const MenuBar = () => {
+  const classes = useStyles();
+  return (
+    <div className={classes.MenuContainer}>
+      <div className={classes.navContainer}>
+        {menuItems.map((item) => (
+          <Link
+            to={`${item.url}`}
+            key={item.name}
+            className={classes.linkItems}
+          >
+            <MenuItem text={item.name} icon={item.Icon} />
+          </Link>
+        ))}
+
+        <Button className={classes.linkItems}>
+          <MenuItem
+            text="More"
+            icon={<MoreHorizIcon style={{ fontSize: "1.8rem" }} />}
+          />
+        </Button>
+      </div>
+    </div>
+  );
+};
+
+export default MenuBar;
