@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import { Avatar, IconButton, Typography } from "@mui/material";
-import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import { IconButton } from "@mui/material";
 
 import useStyles from "../styles/headerStyles";
 import { withRouter } from "react-router";
 import CustomButton from "../customComponents/CustomButton";
 import MenuBar from "./MenuBar";
+import AccountFooter from "./AccountFooter";
+import CustomMenu from "../customComponents/CustomMenu";
 
 const HeaderBar = ({ history }) => {
   const classes = useStyles();
+  const [anchorEl, setAnchorEl] = useState(null);
+
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   return (
     <header>
       <div className={classes.headerContainer}>
@@ -35,38 +45,19 @@ const HeaderBar = ({ history }) => {
           </div>
         </div>
         <div className={classes.footer1}>
-          <div className={classes.profileContainer}>
-            <div className={classes.profile}>
-              <div>
-                <Avatar
-                  alt="semy Sharp"
-                  src="/images/logo192.png"
-                  sx={{ width: 48, height: 48 }}
-                />
-              </div>
-              <div className={classes.namesConatiner}>
-                <Typography
-                  variant="h6"
-                  gutterBottom
-                  component="p"
-                  className={classes.profileName}
-                >
-                  Name_Is_Girish
-                </Typography>
-                <Typography
-                  variant="h6"
-                  gutterBottom
-                  component="p"
-                  className={classes.idName}
-                >
-                  @Name_Is_Girish
-                </Typography>
-              </div>
-            </div>
-            <div className={classes.moreButton}>
-              <MoreHorizIcon style={{ fontSize: "1.5rem" }} />
-            </div>
+          <div
+            className={classes.profileContainer}
+            // aria-expanded={open ? "true" : undefined}
+            onClick={handleClick}
+          >
+            <AccountFooter classes={classes} />
           </div>
+          <CustomMenu
+            handleClose={handleClose}
+            open={open}
+            anchorEl={anchorEl}
+            from="footer"
+          />
         </div>
       </div>
     </header>

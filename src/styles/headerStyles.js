@@ -14,9 +14,13 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     bottom: 10,
     width: "100%",
+    "& .MuiMenu-paper": {
+      backgroundColor: "#fff",
+    },
   },
   profileContainer: {
     width: "90%",
+    cursor: "pointer",
     justifyContent: "space-evenly",
     textDecoration: "none",
     color: theme.palette.text.primary,
@@ -30,6 +34,12 @@ const useStyles = makeStyles((theme) => ({
     transitionDuration: "0.2s",
   },
   profile: {
+    display: "flex",
+    justifyContent: "space-between",
+    // width: "250px",
+    marginRight: "0",
+  },
+  avatarContainer: {
     display: "flex",
     justifyContent: "space-between",
   },
@@ -53,6 +63,24 @@ const useStyles = makeStyles((theme) => ({
   moreButton: {
     display: "flex",
     alignItems: "center",
+    marginLeft: "30px",
+  },
+  newCLasss: {
+    "& .css-1if8r2c-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper":
+      {
+        backgroundColor: "#000000",
+        backgroundImage: "none",
+        boxShadow:
+          "rgb(255 255 255 / 20%) 0px 0px 15px, rgb(255 255 255 / 15%) 0px 0px 3px 1px",
+        borderRadius: "16px",
+        overflow: "hidden",
+        padding: "12px 12px",
+        minWidth: "260px",
+        width: "300px",
+      },
+    "& .css-12wi0s0-MuiButtonBase-root-MuiMenuItem-root": {
+      padding: "16px",
+    },
   },
 }));
 

@@ -1,17 +1,20 @@
-import React from 'react'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+import HomePage from "../pages/HomePage";
+import useStyles from "../styles/pageStyles/homePageStyles";
 
 const Routers = () => {
-    return (
-        <div>
-           
-          <Switch>
-          
-          </Switch>
-        
-        </div>
-    )
-}
+  const classes = useStyles();
 
-export default Routers
+  return (
+    <div className={classes.homeContainer}>
+      <div className={classes.homeContainer1}>
+        <Switch>
+          <Route to="/" exact component={HomePage} />
+        </Switch>
+      </div>
+    </div>
+  );
+};
+
+export default Routers;

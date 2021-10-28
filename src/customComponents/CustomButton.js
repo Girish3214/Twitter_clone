@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import React from "react";
+import useStyles from "../styles/customComponentStyles";
 
 const CustomButton = (props) => {
   const { children, bgcolor } = props;
@@ -16,12 +17,15 @@ const CustomButton = (props) => {
     overflowWrap: "break-word",
     textTransform: "capitalize",
   };
+  const classes = useStyles();
   return (
     <>
       {bgcolor ? (
-        <Button style={ButtonStyle}>{children}</Button>
+        <Button style={ButtonStyle} className={classes.ButtonStyle}>
+          {children}
+        </Button>
       ) : (
-        <Button style={ButtonStyle}>
+        <Button style={ButtonStyle} className={classes.ButtonStyle}>
           <div>{children}</div>
         </Button>
       )}

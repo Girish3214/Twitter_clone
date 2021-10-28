@@ -1,0 +1,38 @@
+export const NewsList = [
+  {
+    hashTags: "#RohithSharma",
+    tweets: 0,
+    tweetCategory: "Cricket",
+    tweetImage: "/images/bac.jpg",
+    trendingWith: ["#Friends", "#GUNTHER"],
+    dateOfPost: "",
+    isTrending: false,
+  },
+  {
+    hashTags: "Friends actor James Michael Tyler dies aged 59",
+    tweets: 17256,
+    tweetCategory: "News",
+    tweetImage: "",
+    trendingWith: ["#Friends", "#GUNTHER"],
+    dateOfPost: "",
+    isTrending: true,
+  },
+  {
+    hashTags: "#KanganaRanaut",
+    tweets: 726256,
+    tweetCategory: "Cricket",
+    tweetImage: "/images/logo192.png",
+    trendingWith: ["#Friends", "#GUNTHER"],
+    dateOfPost: "",
+    isTrending: false,
+  },
+  {
+    hashTags: "The teaser for Prabhas' Radhe Shyam is here",
+    tweets: 7256,
+    tweetCategory: "Entertainment",
+    tweetImage: "/images/logo192.png",
+    trendingWith: ["#Friends", "#GUNTHER"],
+    dateOfPost: "",
+    isTrending: true,
+  },
+];
