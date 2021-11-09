@@ -5,7 +5,6 @@ import useStyles from "../styles/pageStyles/tweetStyles";
 import { withRouter } from "react-router-dom";
 import Model from "./Model/Model";
 import { CardMedia } from "@mui/material";
-import { videoFormatList } from "../utils/videoFormatList";
 
 function srcset(image, size, rows = 1, cols = 1) {
   return {
