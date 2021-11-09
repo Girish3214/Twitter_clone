@@ -11,7 +11,7 @@ const LightTooltip = styled(({ className, ...props }) => (
     boxShadow:
       "rgb(255 255 255 / 20%) 0px 0px 15px, rgb(255 255 255 / 15%) 0px 0px 3px 1px",
     borderRadius: "16px",
-    backgroundColor: "#000000",
+    backgroundColor: theme.palette.background.paper,
     backgroundImage: "none",
   },
 }));

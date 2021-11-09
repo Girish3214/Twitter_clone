@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "0",
     padding: "15px 10px",
     "&:hover": {
-      backgroundColor: "rgba(255,255,255,0.03)",
+      backgroundColor: theme.palette.action.hover,
     },
   },
   avatarContainer: {
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   idName: {
-    color: "rgb(110, 118, 125)",
+    color: theme.palette.text.secondary,
     fontWeight: "400",
     fontSize: 12,
     marginTop: "-4px",

@@ -4,9 +4,10 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxHeight: "50vh",
     minHeight: "35vh",
-    backgroundColor: "rgb(21, 24, 28)",
+    backgroundColor: theme.palette.action.hover,
     borderRadius: "16px",
     marginBottom: "16px",
+    // border: `0.5px solid ${theme.palette.text.secondary}`,
   },
   policyContainer: {
     display: "flex",
@@ -20,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     },
     "& p a": {
       textDecoration: "none",
-      color: "rgb(110, 118, 125)",
+      color: theme.palette.text.secondary,
       fontWeight: "400",
       marginBottom: "2px",
       "&:hover": {
@@ -40,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     borderBottomRightRadius: "16px",
     borderBottomLeftRadius: "16px",
     "&:hover": {
-      backgroundColor: "rgb(255,255,255,0.03)",
+      backgroundColor: theme.palette.action.hover,
     },
   },
   newsContainer: {

@@ -29,13 +29,14 @@ const useStyles = makeStyles((theme) => ({
   profileName: {
     fontSize: "15px",
     marginBottom: "2px",
+    color: theme.palette.text.secondary,
     "&:hover": {
       textDecoration: "underline",
       curser: "pointer",
     },
   },
   idName: {
-    color: "rgb(110, 118, 125)",
+    color: theme.palette.text.secondary,
     fontWeight: "400",
     fontSize: 12,
     marginTop: "-4px",
@@ -46,6 +47,7 @@ const useStyles = makeStyles((theme) => ({
   description: {
     fontWeight: "400",
     fontSize: 14,
+    color: theme.palette.text.secondary,
   },
   followCountContainer: {
     display: "flex",
@@ -54,15 +56,15 @@ const useStyles = makeStyles((theme) => ({
   count: {
     fontSize: "15px",
     fontWeight: 500,
-    color: "#fff",
+    color: theme.palette.text.primary,
   },
   text: {
-    color: "rgb(110, 118, 125)",
+    color: theme.palette.text.secondary,
     marginLeft: 5,
     marginRight: 18,
   },
   friendsFollowing: {
-    color: "rgb(110, 118, 125)",
+    color: theme.palette.text.secondary,
 
     paddingTop: 10,
     fontSize: 12,

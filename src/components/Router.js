@@ -1,5 +1,6 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
+import ExplorePage from "../pages/ExplorePage";
 import HomePage from "../pages/HomePage";
 import useStyles from "../styles/pageStyles/homePageStyles";
 
@@ -9,9 +10,8 @@ const Routers = () => {
   return (
     <div className={classes.homeContainer}>
       <div className={classes.homeContainer1}>
-        <Switch>
-          <Route to="/" exact component={HomePage} />
-        </Switch>
+        <Route path="/home" exact component={HomePage} />
+        <Route path="/explore" exact component={ExplorePage} />
       </div>
     </div>
   );

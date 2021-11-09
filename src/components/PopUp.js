@@ -3,7 +3,7 @@ import React from "react";
 import CustomButton from "../customComponents/CustomButton";
 import VerifiedIcon from "@mui/icons-material/Verified";
 import useStyles from "../styles/customComponentStyles";
-import { converter } from "../utils/PeoplesList";
+import { converter } from "../utils/convertioUtils/counterConverter";
 
 const PopUp = ({ id }) => {
   const classes = useStyles();

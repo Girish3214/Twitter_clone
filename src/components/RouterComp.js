@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { Switch, BrowserRouter as Router } from "react-router-dom";
 
 import HeaderBar from "./HeaderBar";
 import Routers from "./Router";
@@ -14,7 +14,9 @@ const RouterComp = () => {
           <HeaderBar />
         </Grid>
         <Grid item xs={6}>
-          <Routers />
+          <Switch>
+            <Routers />
+          </Switch>
         </Grid>
         <Grid item xs={3}>
           <SideBar />

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useStyles from "../styles/newsItemStyles";
-import { converter } from "../utils/PeoplesList";
+import { converter } from "../utils/convertioUtils/counterConverter";
 
 const NewsItem = ({ news }) => {
   const classes = useStyles();

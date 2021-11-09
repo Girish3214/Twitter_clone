@@ -10,16 +10,16 @@ const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
 
     "&:hover": {
-      backgroundColor: "rgba(255,255,255,0.03)",
+      backgroundColor: theme.palette.action.hover,
     },
   },
   newsFeed: {
     fontSize: "13px",
-    color: "rgb(110, 118, 125)",
+    color: theme.palette.text.secondary,
   },
   hashTags: {
     // fontSize: "10px",
-    color: "white",
+    color: theme.palette.text.primary,
     fontWeight: 700,
   },
   linkItem: {

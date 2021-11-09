@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "0",
   },
   idName: {
-    color: "rgb(110, 118, 125)",
+    color: theme.palette.text.secondary,
     fontWeight: "400",
     fontSize: 12,
     marginTop: "-4px",
@@ -68,13 +68,13 @@ const useStyles = makeStyles((theme) => ({
   newCLasss: {
     "& .css-1if8r2c-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper":
       {
-        backgroundColor: "#000000",
+        backgroundColor: theme.palette.background.paper,
         backgroundImage: "none",
         boxShadow:
           "rgb(255 255 255 / 20%) 0px 0px 15px, rgb(255 255 255 / 15%) 0px 0px 3px 1px",
         borderRadius: "16px",
         overflow: "hidden",
-        padding: "12px 12px",
+        padding: "12px 12px 0px ",
         minWidth: "260px",
         width: "300px",
       },

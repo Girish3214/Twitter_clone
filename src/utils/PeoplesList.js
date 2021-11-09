@@ -1,9 +1,9 @@
 export const FamousList = [
   {
-    name: "thaman S",
+    name: "luna",
     isVerified: true,
     imageUrl: "/images/logo192.png",
-    twitterName: "@MusicThaman",
+    twitterName: "@itš_me_luna",
     description:
       "music composer, Drummer in Indian film industry / Cricketer music composer, Drummer in Indian film industry / Cricketer music composer, Drummer in Indian film industry / Cricketer music composer, Drummer in Indian film industry / Cricketer",
     followers: 1900000,
@@ -11,49 +11,39 @@ export const FamousList = [
     friendsFollowing: ["name_is_Girish", "Itachi"],
   },
   {
-    name: "thaman S",
+    name: "Naruto",
     isVerified: false,
     imageUrl: "/images/logo192.png",
-    twitterName: "@MusicThaman",
+    twitterName: "@Uzumaki_Naruto",
     description: "music composer, Drummer",
     followers: 1900000,
     following: 354,
   },
   {
-    name: "thaman S",
+    name: "Itachi_Uchiha",
     isVerified: true,
     imageUrl: "/images/logo192.png",
-    twitterName: "@MusicThaman",
+    twitterName: "@UchihaITACHI",
     description: "music composer, Drummer in Indian film industry / Cricketer",
     followers: 1900000,
     following: 354,
   },
   {
-    name: "thaman S",
+    name: "Light",
     isVerified: true,
     imageUrl: "/images/logo192.png",
-    twitterName: "@MusicThaman",
+    twitterName: "@KiraLIGHT",
     description: "music composer, Drummer in Indian film industry / Cricketer",
     followers: 1900000,
     following: 354,
   },
   {
-    name: "thaman S",
+    name: "Peachy",
     isVerified: true,
     imageUrl: "/images/logo192.png",
-    twitterName: "@MusicThaman",
+    twitterName: "@Peachy",
     description: "music composer, Drummer in Indian film industry / Cricketer",
     followers: 1900000,
     following: 354,
   },
 ];
-
-function intlFormat(num) {
-  return new Intl.NumberFormat().format(Math.round(num * 10) / 10);
-}
-
-export const converter = (num) => {
-  if (num >= 1000000) return intlFormat(num / 1000000) + "M";
-  if (num >= 1000) return intlFormat(num / 1000) + "k";
-  return intlFormat(num);
-};

@@ -1,14 +1,14 @@
 import React from "react";
-import useStyles from "../styles/pageStyles/homePageStyles";
+// import useStyles from "../styles/pageStyles/homePageStyles";
 import HomeHeader from "../components/HomeHeader";
-import HomeAddTweet from "../components/HomeAddTweet";
+import TweetsContainer from "../components/TweetsContainer";
 
 const HomePage = () => {
-  const classes = useStyles();
+  // const classes = useStyles();
   return (
     <>
       <HomeHeader />
-      <HomeAddTweet />
+      <TweetsContainer />
     </>
   );
 };
