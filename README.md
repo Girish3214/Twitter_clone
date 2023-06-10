@@ -4,7 +4,7 @@ after cloning the repo:
 #### Setup
 
 ```bash
-npm install
+cd Twitter_clone && npm install
 ```
 
 ### App images
