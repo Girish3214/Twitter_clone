@@ -8,7 +8,7 @@ npm install
 ```
 
 ### App images
-<img src="https://github.com/Girish3214/highon_assessment/blob/master/images/login.png?raw=true" width="200" height="350">
+<img src="https://github.com/Girish3214/Twitter_clone/blob/master/public/videos/twitter.gif?raw=true" width="900" height="600">
 
 ### Packages
     
